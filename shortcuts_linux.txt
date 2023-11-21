@@ -1,0 +1,77 @@
+//shortcuts:
+https://help.ubuntu.com/stable/ubuntu-help/shell-keyboard-shortcuts.html.en
+tab(2) =>
+
+mkdir info => detailed about the command
+
+[spacebar] => to scroll down
+ **windows key => super **
+
+ctrl + alt + tab => diff option(windows, top bar, dash)
+
+ctrl + alt + del => Log out user
+
+ctrl + alt +t => Open Terminal **
+
+Ctrl+Shift+C => Copy the highlighted text or commands to the clipboard in the Terminal.
+
+Ctrl+Shift+ => Paste the contents of the clipboard in the Terminal.
+
+ctrl + z => suspend process and resume later (use in terminal)
+
+ctrl + c => Forcefull terminate (use in terminal)
+
+ctrl + l => Clear Screen (use in terminal)
+
+alt + F2 => Run a command **
+
+super + a => list the applications
+
+super + l => lock screen
+
+super + v => show notification 
+
+super + page down/up => switch btw workspaces
+
+super + ` => Switch between windows/application from the same application
+
+super + tab => switch btw windows/app even if they open in different workspace
+
+alt + esc => switch btw application in same/current workspace ***
+
+
+
+---------------------------------------
+with super key
+
++a => list the applications
++l => lock screen
++v => show notification 
++page down/up => switch btw workspaces (In Windows [win+tab] / [win+ctrl+left/right arrow])
++` => Switch between windows from the same application
+
++tab => switch btw windows/app even if they open in different workspace
+
+alt+esc => switch btw application in same/current workspace
+
+----------------------------------------
+
+shortcuts in terminals
+
+(ctrl)
++x
++O
++W
++k
++U
+----------------------------------------
+
+screenshot: 
+
+Take a screenshot => shift+tab
+Take a screenshot interactively => print
+Take a screenshot => alt+print
+
+------------------------------------
+
+setting > keyboard > customize shortcuts
