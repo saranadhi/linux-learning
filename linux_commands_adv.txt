@@ -1,0 +1,49 @@
+head file1.txt => return first 10 lines of text
+
+tail file1.txt => return last 10 lines of text
+
+tac file1.txt => display reverse file(reverse cat file1)
+
+more file1.txt => display content by enter,similar to cat
+
+*id => display user id/group id
+
+grep (pattern) file1.txt=> filter-> search the given pattern in the file  
+
+diff file1.txt file2.txt=> compares the content of two different files
+
+ping google.com => check net connectivity
+
+history => review all the comments which u have entered
+
+hostname => display hostname
+hostname -i => display ip
+
+**chmod => alter/change the permission
+
+nl => display the line numbers
+
+**wc file1.txt=> gives number of lines, words and char available in the content (order maintained)
+
+uniq file1.txt=> removes duplicates of file content(continues word only)
+
+rmdir => removes the specified directories
+----------------------------------------------------------
+
+zip files.zip fileName1.exe fileName2.exe => Zip all select/entered files
+
+unzip fileName.zip => extract the zip file
+
+unzip files.zip -d (directory path) => extract the files to provide path/directory
+
+{if the files are already extract in the same directory/provide a path the terminal will either we want to replace it [y/n]}
+
+unzip -q files.zip => avoid extracting message in the terminal
+
+zip -u file.zip fileName.txt => alter zip file or add another a txt file to existing zip files
+
+zip -m file.zip filename.txt => add the entered files to zip and delete the entered the fileName.txt
+
+zip -r file.zip fileName dirName/ => add files and folder to zip files
+
+zip -e password.zip filename => add password to zip files
