@@ -1,0 +1,141 @@
+//Linux Commands (Complete)
+-info 
+-help
+i v r f
+------------------
+
+creating directories (nested)
+
+mkdir info
+
+mkdir -p foo/bar/1/2/3 => if it doen't exist or ignore existing parent directory
+
+-p foo/bar/1/2/3 => if it doen't exist or ignore existing parent directory
+-**m: Sets the permissions of the created directory to the specified mode.
+-v: Displays msg
+
+ls foo/bar/1/2/3
+
+-------------------
+
+How to remove directory/directories
+
+rmdir foo/bar/1/2/3/ => last folder/directory will be removed
+-p: Removes the directory, including all its sub-directory.
+-v: Displays information for every directory.
+
+rm => deleting files and directories in Linux.,irreversible 
+ -> -rv (-r -v) => -r flag tells rm to recursively delete directories and also delete the sub-directory, -v flag is used to print a message for each file that it deletes 
+ ->  i flag to interactively confirm the deletion of each file. It is used to avoid accidentally deleting important files.
+
+
+rm vs rmdir :
+
+rm:
+
+>It can be used to delete both empty and non-empty directories and it is a general command.
+>More controllable
+
+rmdir:
+
+>It will not delete non-empty directories and it is a specific command
+>It is not controllable as rm
+
+{The rm command can be used to delete non-empty directories as well but rmdir command is used to delete only empty directories.}
+------------------------------------------------
+
+Rename  Files and directories:
+
+Touch temp => creates an empty file(.txt)
+
+mv temp temp2 => rename a file
+mv -v temp temp2 => -v is used to display info msg
+mv filename folderName => used to move file from directory to the specifed directory (mv /home/user/file1.txt /home/user/Documents)
+
+----------------------------------------------------------
+Streams:
+1.Standard Input
+2.Standard Output
+*3.Standard Error
+
+standard output(>):
+displayed on the user's terminal or redirected to a file for further process
+echo => displaying text to the console 
+ **-n => text to file 
+ -e => new line
+ \t => tab
+
+echo "abcdefghi" > textfile.txt => overwrite any existing content in the file  { '>' (so), used to delete the file before writing the new text to it. }
+
+echo "abcdefghi" >> textfile.txt => appends a new text
+
+-----------------------------------------------
+
+standard input(<):
+how to use the content of a file and redirect that as std input into wc command( interact with the program by providing commands)
+
+wc *=> counting lines,text and words in file
+
+-l: Count only lines.
+-w: Count only words.
+-L: Count the longest line.
+-v: Display msg
+
+wc -l < file1.txt > file2.txt 
+
+
+----------------------------------------
+
+Pipe Output
+
+ls -l (long listing):  displays detailed information about each file or directory, including its file permissions, owner, group, size, and last modification time.
+
+ls -a (all files): displays all files and directories, including those that start with a dot (.)
+
+ls -lu (last access time): last modification time.
+
+ls - l
+ls -lt => latest to old
+ls -ltr =>old to latest
+
+head :
+ls -lt | head -n 2 => show to (2*-1) file from folder
+
+----------------------------------------
+
+Cat:
+cat -n textfile =>  with nunbers
+cat -b textfile => skips the empty line
+
+----------------------------------------
+
+*show hidden files
+
+----------------------------------------
+
+Copy files and folder: (cp)
+cp
+cp -R
+
+------------------------------------------
+Change file dates:
+
+touch -am filename
+touch -r filename1 filename2 => give file data&time to both provided filenames 
+
+stat filename => all stat to provided file
+
+-------------------------------------------
+
+Sort:
+sort -n filename => ascending order
+sort -nr filename => desc order
+sort -nu filename => remove duplicates (dictionary)
+
+---------------------------------------------
+
+Disk Usage:
+
+du => size 
+du -h => with unit
+du -ah => with unit for all files
