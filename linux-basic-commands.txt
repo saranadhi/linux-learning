@@ -113,7 +113,7 @@ cat -b textfile => skips the empty line
 
 ----------------------------------------
 
-Copy files and folder: (cp)
+Copy files and folder: (cp) -RE
 cp
 cp -R
 
